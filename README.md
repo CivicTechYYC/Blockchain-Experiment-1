@@ -8,5 +8,6 @@ Proof of concept: http://swarm-gateways.net/bzz:/5d3e7842dbbe1001edd349914e20e74
 Based on the following tutorials:
 
 https://medium.com/@woodydeck/tutorial-for-setting-up-a-domain-on-the-ens-and-hosting-decentralized-content-on-swarm-part-1-e7723b72d9d2
+
 https://medium.com/@woodydeck/tutorial-for-setting-up-a-domain-on-the-ens-and-hosting-decentralized-content-on-swarm-part-2-403d4e0b72a5
 
