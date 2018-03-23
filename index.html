@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>3ThingsForever</title>
+    <meta name="author" content="CivicTechYYC">
+    <meta content="Display any CSV file as a searchable, filterable, pretty HTML table" />
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/dataTables.bootstrap.css" rel="stylesheet">
+
+    <!-- Timeline CSS - Dependency on Bootstrap -->
+    <link href="css/timeline.css" rel="stylesheet">
+
+    <!-- Custom CSS - Bootstrap overrides -->
+    <link href="css/custom.css" rel="stylesheet">
+    
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script type="text/javascript" src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script type="text/javascript" src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+      <nav class="navbar navbar-inverse navbar-static-top">
+      <!-- <nav class="navbar navbar-inverse navbar-fixed-top"> -->
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">3ThingsForever</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+        <!--      <ul class="nav navbar-nav">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li class="dropdown-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                </li>
+              </ul>-->
+              <ul class="nav navbar-nav navbar-right">
+                <!-- <li><a href="#">Welcome</a></li> -->
+                <li><a href="#about">About the experiment</a></li>
+                <li><a href="#approach">Technical approach</a></li>
+                <li><a href="#action">See it in action</a></li>
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div>
+        </nav>
+        <div class="container-fluid">
+
+            <!-- Main component for a primary marketing message or call to action -->
+            <div class="jumbotron">
+              <h1>3ThingsForever</h1>
+              <h2>Preserving acts of kindness for future generations.</h2>
+              <p>A CivicTechYYC blockchain experiment</p>
+              
+             <!--  <p>
+                <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">Learn More »</a>
+              </p> -->
+            </div>
+            <div class="container" id='about'>
+                <h2>About the experiment</h2>
+                <p>This experiment is an attempt to answer the question - how might we use blockchain technology to help preserve an existing dataset of volunteer deeds, long after the organization that created it (or the platform that hosted it) is gone?</p>
+                <h3>A possible future</h3>
+                <!-- Timeline Start -->
+                <ul class="timeline">
+                    <li>
+                      <div class="timeline-badge success"><i class="glyphicon glyphicon-gift"></i></div>
+                      <div class="timeline-panel">
+                        <div class="timeline-heading">
+                          <h4 class="timeline-title">2017</h4>
+                          <!-- <p><small class="text-muted"><i class="glyphicon glyphicon-time"></i> 11 hours ago via Something</small></p> -->
+                        </div>
+                        <div class="timeline-body">
+                          <p>The website <a href="http://http://www.threethingsforcanada.ca">3ThingsforCanada</a> is launched to celebrate Canada’s 150th birthday. Citizens are asked to perform three acts of service and publicly share these good deeds on social media with the #3ThingsforCanada hashtag.</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="timeline-inverted">
+                      <div class="timeline-badge warning"><i class="glyphicon glyphicon-flag"></i></div>
+                      <div class="timeline-panel">
+                        <div class="timeline-heading">
+                          <h4 class="timeline-title">2018</h4>
+                        </div>
+                        <div class="timeline-body">
+                          <p>Canada turns 151. People don't seem as excited about it.</p><p>The volunteer group CivicTechYYC recognizes this and creates '3ThingsForever,' an experiment to preserve 3ThingsforCanada data using blockchain technology.</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="timeline-badge warning"><i class="glyphicon glyphicon-exclamation-sign"></i></div>
+                      <div class="timeline-panel">
+                        <div class="timeline-heading">
+                          <h4 class="timeline-title">2019</h4>
+                        </div>
+                        <div class="timeline-body">
+                          <p>Aunts, uncles, and grandparents across Canada start to realize all of those quizzes they were taking on Facebook weren't just innocent fun. Acts of kindness start to disappear from view as they tighten privacy settings or delete their accounts out of fear.</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="timeline-inverted">
+                      <div class="timeline-badge danger"><i class="glyphicon glyphicon-alert"></i></div>
+                      <div class="timeline-panel">
+                        <div class="timeline-heading">
+                          
+                          <h4 class="timeline-title">2022</h4>
+                        </div>
+                        <div class="timeline-body">
+                            <p>People flee en masse from social media. Facebook and Twitter went out of business long ago (joining competitors MySpace, Orkut, et al.). The last plaform standing, 'Plebster,' finally closes down and the #3ThingsforCanada data disappears along with it.</p>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="timeline-badge success"><i class="glyphicon glyphicon-floppy-disk"></i></div>
+                      <div class="timeline-panel">
+                        <div class="timeline-heading">
+                          <h4 class="timeline-title">2042</h4>
+                        </div>
+                        <div class="timeline-body">
+                          <p>Data Archeologists from the Lorem Ipsum Institute for Internet Studies discover the #3ThingsforCanada dataset, preserved on the blockchain by the 3ThingsForever experiment. In celebration of Canada's 200th birthday, the data is analysed to understand what Canadians cared about 50 years ago, triggering a new wave of volunteerism and kindness across the country.</p> 
+                        </div>
+                      </div>
+                    </li>
+                </ul>
+                <!-- Timeline End -->
+              </div>
+              <!-- </div> -->
+            <div class="container" id='approach'><h2>Technical approach</h2>
+              <!-- <p>As well meaning as most volunteer organizations are, the last person out the door will remember to turn off the lights but will probably forget to set a forwarding address for the next hosting bill. If you take the long view no group is immune, even the amazing <a href="https://archive.org/">archive.org</a>.</p> -->
+              <p>Proponents of <a href="https://en.wikipedia.org/wiki/Blockchain">blockchain</a> technology speak at length about its decentralized, immutable qualities as a means to combat censorship, but we also think of it as a means to combat atrophy and being forgotten.</p><p><strong>Our goal is to make #3ThingsforCanada data as accessible as possible for as long as possible and as cheaply as possible.</strong> There are a bunch of approaches we might take, each with advantages and trade-offs.</p><p>As a starting point we're targeting the storage layer of the Ethereum Blockchain called 'The Swarm', and using it to store the self-contained folder of HTML, CSS, Javascript, and one very special .CSV file that you see before you. (Two key tutorials were used to upload the files - here are the links to <a href="https://medium.com/@woodydeck/tutorial-for-setting-up-a-domain-on-the-ens-and-hosting-decentralized-content-on-swarm-part-1-e7723b72d9d2">Part 1</a> and <a href="https://medium.com/@woodydeck/tutorial-for-setting-up-a-domain-on-the-ens-and-hosting-decentralized-content-on-swarm-part-2-403d4e0b72a5">Part 2</a>.)</p><p>As a result, this web page is not hosted on a traditional web server but rather a series of decentralized nodes that also host and run Ethereum Smart Contracts. That's why the address of this page may seem a little strange. </p><p>Uploading Swarm seemed like a reasonable balance between cost and longevity. Sure we could put all of the data directly into an Ethereum Smart contract but we learned that the cost associated with this would be enormous - the most expensive data storage on the planet, by far. This is changing though, as new developments emerge on an almost hourly basis.</p></div><br>
+              <div class="container">
+            <div class="panel panel-default" id='action'>  
+              <div class="panel-heading"><h2>See it in action</h2></div>
+              <div class="panel-body">
+              <p>Here it is - the #3ThingsforCanada data as obtained from Twitter. The entire dataset has been included, sorted on a column of our favourites, representing 'actual' good deeds as opposed to shout-outs, promotions, and the like. A few columns have been hidden for legibility. Browse below or download the entire dataset as a .csv file.</p><p>Members of our group have used this file to perform text and sentiment analyses, which yield some interesting insights about the 3ThingsforCanada initiative. Who knows what else people might do with this data in the future.</p>
+              </div> <!-- close body -->
+            </div> <!-- close panel -->
+            <br>
+            <div id='table-container'></div>
+
+        </div> <!-- close panel and data enclosing container -->
+          
+          </div><!-- /.container -->
+
+    <footer class='footer'>
+      <div class='container-fluid'>
+        <hr />
+        <img src="/images/CivicTechYYCLogo-sm.jpg" class="pull-left" alt="CivicTechYYC Logo">
+        <div class='text-right'>
+          <p>2017+1<a href='https:civictechyyc.wordpress.com'> CivicTechYYC</a></p>
+          <p><small class="text-muted">This experiment is not afilliated with 3ThingsforCanada. We just really like it is all. Here's the <a href="https://github.com/CivicTechYYC/Blockchain-Experiment-1">source code.</a></small></p>
+          <p><small class="text-muted"><a href='https://github.com/derekeder/csv-to-html-table'>CSV to HTML Table</a> by <a href='http://derekeder.com'>Derek Eder</a></small></p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.csv.min.js"></script>
+    <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="js/dataTables.bootstrap.js"></script>
+    <script type="text/javascript" src="js/csv_to_html_table.js"></script>
+
+
+    <script type="text/javascript">
+      function format_link(link){
+        if (link)
+          return "<a href='" + link + "' target='_blank'>" + link + "</a>";
+        else
+          return "";
+      }
+
+      CsvToHtmlTable.init({
+        csv_path: 'data/3ThingsForCanada.csv',
+        element: 'table-container',
+        allow_download: true,
+        csv_options: {separator: ',', delimiter: '"'},
+        datatables_options: {"paging": true, "responsive": true, "aoColumns": [{ sWidth: '30%' },  {sWidth: 'null' },  {sWidth: 'null' }, {sWidth: 'null' }, {sWidth: 'null' }, {sWidth: 'null' }, {sWidth: '30%'}, {sWidth: '30%'}, {sWidth: 'null' }, {sWidth: 'null' } ], "columnDefs": [
+            {
+                "targets": [ 2 ],
+                "visible": false
+            },
+            {
+                "targets": [ 3 ],
+                "visible": false
+            },
+             {
+                "targets": [ 4 ],
+                "visible": false
+            },
+            {
+                "targets": [ 5 ],
+                "visible": false
+            },
+             {
+                "targets": [ 1 ],
+                "visible": false
+            },
+             {
+                "targets": [ 8 ],
+                "visible": false
+            },
+            {
+                "targets": [ 9 ],
+                "visible": false
+            }
+        ]
+          
+        }
+        // custom_formatting: [[4, format_link]]
+      });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+          // Add smooth scrolling to all links
+          $("a").on('click', function(event) {
+        
+            // Make sure this.hash has a value before overriding default behavior
+            if (this.hash !== "") {
+              // Prevent default anchor click behavior
+              event.preventDefault();
+        
+              // Store hash
+              var hash = this.hash;
+        
+              // Using jQuery's animate() method to add smooth page scroll
+              // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+              $('html, body').animate({
+                scrollTop: $(hash).offset().top
+              }, 800, function(){
+           
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              });
+            } // End if
+          });
+        });
+        </script>
+  </body>
+</html>

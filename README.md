@@ -13,3 +13,4 @@ https://medium.com/@woodydeck/tutorial-for-setting-up-a-domain-on-the-ens-and-ho
 
 https://medium.com/@woodydeck/tutorial-for-setting-up-a-domain-on-the-ens-and-hosting-decentralized-content-on-swarm-part-2-403d4e0b72a5
 
+Uses CSV to HTML Table by Derek Eder - https://github.com/derekeder/csv-to-html-table/
