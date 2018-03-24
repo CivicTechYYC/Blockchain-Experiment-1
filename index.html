@@ -67,6 +67,7 @@
           </div>
         </nav>
         <div class="container-fluid">
+          <div class="container">
 
             <!-- Main component for a primary marketing message or call to action -->
             <div class="jumbotron">
@@ -78,7 +79,8 @@
                 <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">Learn More »</a>
               </p> -->
             </div>
-            <div class="container" id='about'>
+          </div>
+            <div class="container" id="about">
                 <h2>About the experiment</h2>
                 <p>This experiment is an attempt to answer the question - how might we use blockchain technology to help preserve an existing dataset of volunteer deeds, long after the organization that created it (or the platform that hosted it) is gone?</p>
                 <h3>A possible timeline</h3>
@@ -114,7 +116,7 @@
                           <h4 class="timeline-title">2019</h4>
                         </div>
                         <div class="timeline-body">
-                          <p>Aunts, uncles, and grandparents across Canada start to realize all of those quizzes they were taking on Facebook weren't just innocent fun. Acts of kindness start to disappear from view as they tighten privacy settings or delete their accounts out of fear.</p>
+                          <p>Aunts, uncles, and grandparents across Canada start to realize all those quizzes they were taking on Facebook weren't just innocent fun. Acts of kindness start to disappear from view as they tighten privacy settings or delete their accounts out of fear.</p>
                         </div>
                       </div>
                     </li>
@@ -145,28 +147,28 @@
                 <!-- Timeline End -->
               </div>
               <!-- </div> -->
-            <div class="container" id='approach'><h2>Technical approach</h2>
+            <div class="container" id="approach"><h2>Technical approach</h2>
               <!-- <p>As well meaning as most volunteer organizations are, the last person out the door will remember to turn off the lights but will probably forget to set a forwarding address for the next hosting bill. If you take the long view no group is immune, even the amazing <a href="https://archive.org/">archive.org</a>.</p> -->
               <p>Proponents of <a href="https://en.wikipedia.org/wiki/Blockchain">blockchain</a> technology speak at length about its decentralized, immutable qualities as a means to combat censorship, but we might also think of it as a means to combat atrophy and being forgotten.</p><p><strong>Our goal is to make #3ThingsforCanada data as accessible as possible for as long as possible and as cheaply as possible.</strong> There are a bunch of approaches we might take, each with advantages and trade-offs.</p><p>As a starting point we're targeting the storage layer of the Ethereum Blockchain called 'The Swarm', and using it to store the self-contained folder of HTML, CSS, Javascript, and one very special .CSV file that you see before you. <!-- (Two key tutorials were used to upload the files - here are the links to <a href="https://medium.com/@woodydeck/tutorial-for-setting-up-a-domain-on-the-ens-and-hosting-decentralized-content-on-swarm-part-1-e7723b72d9d2">Part 1</a> and <a href="https://medium.com/@woodydeck/tutorial-for-setting-up-a-domain-on-the-ens-and-hosting-decentralized-content-on-swarm-part-2-403d4e0b72a5">Part 2</a>.)--></p><p>As a result, this web page is not hosted on a traditional web server but rather a series of decentralized nodes that also host and run Ethereum Smart Contracts. That's why the address of this page may seem a little strange. </p><p>Uploading to Swarm seemed like a reasonable balance between cost and longevity. Sure we could put all of the data directly into an Ethereum Smart contract but we learned that the cost associated with this would be enormous - the most expensive data storage on the planet, by far. This is changing though, as new developments emerge on an almost hourly basis.</p></div><br>
-              <div class="container">
-            <div class="panel panel-default" id='action'>  
+              <div class="container-fluid">
+            <div class="panel panel-default" id="action">  
               <div class="panel-heading"><h2>See it in action</h2></div>
               <div class="panel-body">
-              <p>Here it is - the #3ThingsforCanada data as obtained from Twitter. The entire dataset has been included, sorted on a column of our favourites, representing 'actual' good deeds as opposed to shout-outs, promotions, and the like. A few columns have been hidden for legibility. Browse below or download the entire dataset as a .csv file.</p><p>Members of our group have used this file to perform text and sentiment analyses, which yield some interesting insights about the 3ThingsforCanada initiative. Who knows what else people might do with this data in the future.</p>
+              <p>Here it is - the #3ThingsforCanada data as obtained from Twitter. The entire dataset has been included, (soon to be) sorted on a column of our favourites, representing 'actual' good deeds as opposed to shout-outs, promotions, and the like. A few columns have been hidden for legibility. Browse below or download the entire dataset as a .csv file.</p><p>Members of our group have used this file to perform text and sentiment analyses, which yield some interesting insights about the 3ThingsforCanada initiative. Who knows what else people might do with this data in the future?</p>
               </div> <!-- close body -->
             </div> <!-- close panel -->
             <br>
-            <div id='table-container'></div>
+            <div id="table-container"></div>
 
         </div> <!-- close panel and data enclosing container -->
           
           </div><!-- /.container -->
 
-    <footer class='footer'>
-      <div class='container-fluid'>
+    <footer class="footer">
+      <div class="container">
         <hr />
         <img src="/images/CivicTechYYCLogo-sm.jpg" class="pull-left" alt="CivicTechYYC Logo">
-        <div class='text-right'>
+        <div class="text-right">
           <p>2017+1<a href="https://civictechyyc.wordpress.com"> CivicTechYYC</a></p>
           <p><small class="text-muted">This experiment is not afilliated with 3ThingsforCanada. We just really like it is all.</small></p>
           <p><small class="text-muted">Here's the <a href="https://github.com/CivicTechYYC/Blockchain-Experiment-1">source code.</a></small></p>
@@ -198,7 +200,7 @@
         element: 'table-container',
         allow_download: true,
         csv_options: {separator: ',', delimiter: '"'},
-        datatables_options: {"paging": true, "responsive": true, "aoColumns": [{ sWidth: '30%' },  {sWidth: 'null' },  {sWidth: 'null' }, {sWidth: 'null' }, {sWidth: 'null' }, {sWidth: 'null' }, {sWidth: '30%'}, {sWidth: '30%'}, {sWidth: 'null' }, {sWidth: 'null' } ], "columnDefs": [
+        datatables_options: {"paging": true, "responsive": true, "aoColumns": [{ sWidth: '25%' },  {sWidth: 'null' },  {sWidth: 'null' }, {sWidth: 'null' }, {sWidth: 'null' }, {sWidth: 'null' }, {sWidth: '60%'}, {sWidth: '15%'}, {sWidth: 'null' }, {sWidth: 'null' } ], "columnDefs": [
             {
                 "targets": [ 2 ],
                 "visible": false
