@@ -154,7 +154,7 @@
             <div class="panel panel-default" id="action">  
               <div class="panel-heading"><h2>See it in action</h2></div>
               <div class="panel-body">
-              <p>Here it is - the #3ThingsforCanada data as obtained from Twitter (unfortunately Facebook doesn't play nice with this kind of thing). The entire dataset has been included, (soon to be) sorted on a column of our favourites, representing 'actual' good deeds as opposed to shout-outs, promotions, and the like. A few columns have been hidden for legibility. Browse below or download the entire dataset as a .csv file.</p><p>Members of our group have used this file to perform text and sentiment analyses, which yield some interesting insights about the 3ThingsforCanada initiative. Who knows what else people might do with this data in the future?</p>
+              <p>Here it is - the #3ThingsforCanada data as obtained from Twitter (unfortunately Facebook doesn't play nice with this kind of thing). The entire dataset has been included, sorted on a (hidden) column flagging 'actual' good deeds as opposed to shout-outs, promotions, and the like. A few additional columns have been hidden for legibility. Browse below or download the entire dataset as a .csv file.</p><p>Members of our group have used this file to perform text and sentiment analyses, which yield some interesting insights about the 3ThingsforCanada initiative. Who knows what else people might do with this data in the future?</p>
               </div> <!-- close body -->
             </div> <!-- close panel -->
             <br>
@@ -200,7 +200,7 @@
         element: 'table-container',
         allow_download: true,
         csv_options: {separator: ',', delimiter: '"'},
-        datatables_options: {"paging": true, "responsive": true, "aoColumns": [{ sWidth: '25%' },  {sWidth: 'null' },  {sWidth: 'null' }, {sWidth: 'null' }, {sWidth: 'null' }, {sWidth: 'null' }, {sWidth: '60%'}, {sWidth: '15%'}, {sWidth: 'null' }, {sWidth: 'null' } ], "columnDefs": [
+        datatables_options: {"paging": true, "responsive": true, "order": [10, 'dsc'], "aoColumns": [{ sWidth: '25%' },  {sWidth: 'null' },  {sWidth: 'null' }, {sWidth: 'null' }, {sWidth: 'null' }, {sWidth: 'null' }, {sWidth: '60%'}, {sWidth: '15%'}, {sWidth: 'null' }, {sWidth: 'null' } ], "columnDefs": [
             {
                 "targets": [ 2 ],
                 "visible": false
@@ -228,7 +228,11 @@
             {
                 "targets": [ 9 ],
                 "visible": false
-            }
+            },
+          {
+            "targets": [10],
+            "visible": false
+          }
         ]
           
         }
