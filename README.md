@@ -3,6 +3,9 @@ How might we help preserve an existing dataset of volunteer deeds, long after th
 
 Our first approach for prototyping and conversation/evaluation: Deploy the existing public dataset as a machine readable file (e.g. .csv) via IPFS/IPNS or Swarm/ENS, possibly along with a simple web front end to render the data from this file in a browser, also 'hosted' via IPFS or Swarm.
 
+Swarm hash:
+http://swarm-gateways.net/bzz:/52a50324a1581d85711a5fc4676b0c743cd5352ba7aebb23b707c99572e51963
+
 Proof of concept: 
 
 http://swarm-gateways.net/bzz:/5d3e7842dbbe1001edd349914e20e747f304348ac682c2ffdfe30a74c266e310/
