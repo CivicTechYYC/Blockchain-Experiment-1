@@ -10,14 +10,14 @@
     <meta content="Display any CSV file as a searchable, filterable, pretty HTML table" />
 
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/dataTables.bootstrap.css" rel="stylesheet">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="dataTables.bootstrap.css" rel="stylesheet">
 
     <!-- Timeline CSS - Dependency on Bootstrap -->
-    <link href="css/timeline.css" rel="stylesheet">
+    <link href="timeline.css" rel="stylesheet">
 
     <!-- Custom CSS - Bootstrap overrides -->
-    <link href="css/custom.css" rel="stylesheet">
+    <link href="custom.css" rel="stylesheet">
     
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -39,7 +39,7 @@
               <a class="navbar-brand" href="#">3ThingsForever</a>
             </div>
             <div id="navbar" class="navbar-collapse collapse">
-              <ul class="nav navbar-nav navbar-right">              
+              <ul class="nav navbar-nav navbar-right">
                 <li><a href="#about">About the experiment</a></li>
                 <li><a href="#approach">Technical approach</a></li>
                 <li><a href="#action">See it in action</a></li>
@@ -66,7 +66,7 @@
                       <div class="timeline-badge success"><i class="glyphicon glyphicon-gift"></i></div>
                       <div class="timeline-panel">
                         <div class="timeline-heading">
-                          <h4 class="timeline-title">2017</h4>                    
+                          <h4 class="timeline-title">2017</h4>
                         </div>
                         <div class="timeline-body">
                           <p>The website <a href="http://http://www.threethingsforcanada.ca">3ThingsforCanada</a> is launched to celebrate Canada’s 150th birthday. Citizens are asked to perform three acts of service and publicly share these good deeds on social media with the #3ThingsforCanada hashtag.</p>
@@ -114,7 +114,7 @@
                           <h4 class="timeline-title">2042</h4>
                         </div>
                         <div class="timeline-body">
-                          <p>Data Archeologists rediscover the #3ThingsforCanada dataset, as preserved by the 3ThingsForever experiment. In celebration of Canada's 200th birthday, the data is analysed to understand what Canadians cared about 25 years ago, triggering a new wave of volunteerism and kindness across the country. Yay!</p> 
+                          <p>Data Archeologists rediscover the #3ThingsforCanada dataset, as preserved by the 3ThingsForever experiment. In celebration of Canada's 200th birthday, the data is analysed to understand what Canadians cared about 25 years ago, triggering a new wave of volunteerism and kindness across the country. Yay!</p>
                         </div>
                       </div>
                     </li>
@@ -122,26 +122,26 @@
                 <!-- Timeline End -->
               </div>
               <!-- </div> -->
-            <div class="container" id="approach"><h2>Technical approach</h2>            
+            <div class="container" id="approach"><h2>Technical approach</h2>
               <p>Proponents of <a href="https://en.wikipedia.org/wiki/Blockchain">blockchain</a> and <a href="https://hacks.mozilla.org/2018/07/introducing-the-d-web/">distributed web</a> technology speak at length about its decentralized, immutable qualities as a means to combat censorship, but we might also think of it as a means to combat atrophy and being forgotten.</p><p><strong>Our goal is to make #3ThingsforCanada data as accessible as possible for as long as possible and as cheaply as possible.</strong> There are a bunch of approaches we might take, each with advantages and trade-offs.</p><p>Based on what we've learned and tried, we are now focusing on the InterPlanetary File System, or <a href="https://ipfs.io">IPFS</a> for short.</p><p>As a result, this web page <strike>is not</strike> will not be hosted on a traditional web server but rather a series of decentralized nodes, and the content <strike>is not</strike> will not be addressed by its location, but but the unique 'fingerprint' of the data. That's why the address of this page will seem a little strange. </p><p>Uploading to IPFS seems like a reasonable balance between cost and longevity. Content is kept alive on IPFS through a process known as 'pinning.' This costs a bit of money (and by a 'bit' we mean a tiny tiny fraction compared to regular hosting), and here's the key: anyone can pin anyone elses data to keep it alive.</p></div><br>
               <div class="container-fluid">
-            <div class="panel panel-default" id="action">  
+            <div class="panel panel-default" id="action">
               <div class="panel-heading"><h2>See it in action</h2></div>
               <div class="panel-body">
-              <p>Here it is - the #3ThingsforCanada data as obtained from Twitter (unfortunately Facebook doesn't play nice with this kind of thing). The entire dataset has been included, sorted on a (hidden) column flagging 'actual' good deeds as opposed to shout-outs, promotions, and the like. A few additional columns have been hidden for legibility. Browse below or download the entire dataset as a .csv file.</p><p>Members of our group have used this file to perform <a href="analyses/3thingstweetstudy.html">text</a> and <a href="analyses/3thingstweetsentiment.html">sentiment</a> analyses, which yield some interesting insights about the 3ThingsforCanada initiative. Who knows what else people might do with this data in the future?</p>
-              </div> 
-            </div> 
+              <p>Here it is - the #3ThingsforCanada data as obtained from Twitter (unfortunately Facebook doesn't play nice with this kind of thing). The entire dataset has been included, sorted on a (hidden) column flagging 'actual' good deeds as opposed to shout-outs, promotions, and the like. A few additional columns have been hidden for legibility. Browse below or download the entire dataset as a .csv file.</p><p>Members of our group have used this file to perform <a href="3thingstweetstudy.html">text</a> and <a href="3thingstweetsentiment.html">sentiment</a> analyses, which yield some interesting insights about the 3ThingsforCanada initiative. Who knows what else people might do with this data in the future?</p>
+              </div>
+            </div>
             <br>
             <div id="table-container"></div>
 
-        </div> 
+        </div>
           
           </div><!-- /.container -->
 
     <footer class="footer">
       <div class="container">
         <hr />
-        <img src="images/CivicTechYYCLogo-sm.jpg" class="pull-left" alt="CivicTechYYC Logo">
+        <img src="CivicTechYYCLogo-sm.jpg" class="pull-left" alt="CivicTechYYC Logo">
         <div class="text-right">
           <p>2017+??<a href="https://civictechyyc.wordpress.com"> CivicTechYYC</a></p>
           <p><small class="text-muted">This experiment is not afilliated with 3ThingsforCanada. We just really like it is all.</small></p>
@@ -153,12 +153,12 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/jquery.csv.min.js"></script>
-    <script type="text/javascript" src="js/jquery.dataTables.min.js"></script>
-    <script type="text/javascript" src="js/dataTables.bootstrap.js"></script>
-    <script type="text/javascript" src="js/csv_to_html_table.js"></script>
+    <script type="text/javascript" src="jquery.min.js"></script>
+    <script type="text/javascript" src="bootstrap.min.js"></script>
+    <script type="text/javascript" src="jquery.csv.min.js"></script>
+    <script type="text/javascript" src="jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="dataTables.bootstrap.js"></script>
+    <script type="text/javascript" src="csv_to_html_table.js"></script>
 
 
     <script type="text/javascript">
@@ -172,7 +172,7 @@
       //see datatables documentation for explanation of options - we're using to control paging, visibility, column width, and sort order
       
       CsvToHtmlTable.init({
-        csv_path: 'data/3ThingsForCanada.csv',
+        csv_path: '3ThingsForCanada.csv',
         element: 'table-container',
         allow_download: true,
         csv_options: {separator: ',', delimiter: '"'},

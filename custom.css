@@ -1,0 +1,19 @@
+/* Custom styles */
+/* Reference in HTML after bootstrap */
+
+.jumbotron {
+  background-image: url("kindfolk-703-unsplash.jpg");
+  background-color: #FFF;
+  margin-bottom: 0;
+  min-height: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-background-size: cover;
+  background-size: cover;
+  color: #444;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+.navbar {
+  border-top: 4px solid hsl(257, 44%, 45%);
+}
